@@ -21,7 +21,7 @@
 set -e
 
 # binutils and gcc version
-export BINUTILS_VERSION="2.10.1"
+export BINUTILS_VERSION="2.25"
 export GCC_VERSION="6.3.0"
 
 export PREFIX="$HOME/opt/cross"
