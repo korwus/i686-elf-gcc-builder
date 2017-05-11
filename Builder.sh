@@ -24,6 +24,8 @@ set -e
 export BINUTILS_VERSION="2.25"
 export GCC_VERSION="6.3.0"
 
+export PATH_TO_SHELL_RC="~/.zshrc"
+
 export PREFIX="$HOME/opt/cross"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
@@ -67,8 +69,8 @@ cd ../../
 rm -rf binutils-$BINUTILS_VERSION*
 rm -rf gcc-$GCC_VERSION*
 
-echo "Adding elf-686-gcc to \$PATH"
-echo "export PATH=\"\$HOME/opt/cross/bin:\$PATH" >> ~/.bashrc
+echo "Adding elf-i686-gcc to \$PATH"
+echo "export PATH=\"\$HOME/opt/cross/bin:\$PATH" >> $PATH_TO_SHELL_RC
 
 echo "Done."
 
