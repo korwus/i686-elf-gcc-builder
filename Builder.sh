@@ -39,7 +39,7 @@ tar -xf binutils-$BINUTILS_VERSION.tar.gz
 tar -xf gcc-$GCC_VERSION.tar.gz
 
 echo "Obtainig gcc download prerequisities..."
-cd gcc
+cd gcc-$GCC_VERSION
 contrib/download_prerequisities
 
 cd ../
