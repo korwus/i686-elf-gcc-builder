@@ -22,7 +22,7 @@ set -e
 
 # binutils and gcc version
 export BINUTILS_VERSION="2.29"
-export GCC_VERSION="7.2"
+export GCC_VERSION="7.2.0"
 
 export PATH_TO_SHELL_RC="~/.zshrc"
 
