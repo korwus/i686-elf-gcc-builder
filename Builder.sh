@@ -24,7 +24,7 @@ set -e
 export BINUTILS_VERSION="2.29"
 export GCC_VERSION="7.2.0"
 
-export PATH_TO_SHELL_RC="~/.zshrc"
+export PATH_TO_SHELL_RC="/home/$(whoami)/.zshrc"
 
 export PREFIX="$HOME/opt/cross"
 export TARGET=i686-elf
