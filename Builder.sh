@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #     i686-elf-gcc cross compiler build script
 #     Copyright (C) 2017  Dani Frisk ( k4m1@protonmail.com )
