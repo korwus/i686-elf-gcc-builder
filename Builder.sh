@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 #     i686-elf-gcc cross compiler build script
-#     Copyright (C) 2017  Dani Frisk ( k4m1@protonmail.com )
+#     Copyright (C) 2017  k4m1 ( k4m1@protonmail.com )
 # 
 #     This program is free software: you can redistribute it and/or modify
 #     it under the terms of the GNU General Public License as published by
@@ -24,10 +24,10 @@ set -e
 export BINUTILS_VERSION="2.29"
 export GCC_VERSION="7.2.0"
 
-export PATH_TO_SHELL_RC="~/.zshrc"
+export PATH_TO_SHELL_RC="~/.kshrc"
 
 export PREFIX="$HOME/opt/cross"
-export TARGET=i686-elf
+export TARGET=aarch64-elf
 export PATH="$PREFIX/bin:$PATH"
 
 echo "Obtaining binutils and gcc..."
@@ -54,7 +54,7 @@ make
 make install
 cd ../../
 
-echo "Configuring and building elf-i686-gcc..."
+echo "Configuring and building elf-x86-gcc..."
 cd gcc-$GCC_VERSION
 mkdir -pv build
 cd build
@@ -70,7 +70,7 @@ rm -rf binutils-$BINUTILS_VERSION*
 rm -rf gcc-$GCC_VERSION*
 
 echo "Adding elf-i686-gcc to \$PATH"
-echo "export PATH=\"\$HOME/opt/cross/bin:\$PATH" >> $PATH_TO_SHELL_RC
+echo "export PATH=\"\$HOME/opt/cross/bin:\$PATH\"" >> $PATH_TO_SHELL_RC
 
 echo "Done."
 
