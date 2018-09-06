@@ -26,7 +26,7 @@ export GCC_VERSION="7.2.0"
 export PATH_TO_SHELL_RC="~/.kshrc"
 
 export PREFIX="$HOME/opt/cross"
-export TARGET=aarch64-elf
+export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
 
 echo "Obtaining binutils and gcc..."
