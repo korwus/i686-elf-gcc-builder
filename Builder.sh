@@ -53,7 +53,7 @@ make
 make install
 cd ../../
 
-echo "Configuring and building elf-x86-gcc..."
+echo "Configuring and building $TARGET-gcc..."
 cd gcc-$GCC_VERSION
 mkdir -pv build
 cd build
@@ -68,7 +68,7 @@ cd ../../
 rm -rf binutils-$BINUTILS_VERSION*
 rm -rf gcc-$GCC_VERSION*
 
-echo "Adding elf-i686-gcc to \$PATH"
+echo "Adding $TARGET-gcc to \$PATH"
 echo "export PATH=\"\$HOME/opt/cross/bin:\$PATH\"" >> $PATH_TO_SHELL_RC
 
 echo "Done."
