@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/bin/sh
+=======
+#!/usr/bin/env bash
+>>>>>>> 7b8d96a5d2128fbc318040b16163129472936de5
 
 #     i686-elf-gcc cross compiler build script
 #     Copyright (C) 2017  k4m1 ( k4m1@protonmail.com )
@@ -24,7 +28,11 @@ set -e
 export BINUTILS_VERSION="2.29"
 export GCC_VERSION="7.2.0"
 
+<<<<<<< HEAD
 export PATH_TO_SHELL_RC="~/.kshrc"
+=======
+export PATH_TO_SHELL_RC="/home/$(whoami)/.zshrc"
+>>>>>>> 7b8d96a5d2128fbc318040b16163129472936de5
 
 export PREFIX="$HOME/opt/cross"
 export TARGET=aarch64-elf
